@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Overte Directory Dashboard</title>
+	
+	<link rel="stylesheet" type="text/css" href="/css/login.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/generic.css"/>
+</head>
+<body>
+	<%- include("../partials/header.ejs") %>
+
+	<div class="login-container">
+		<div class="container-header">Sign In</div>
+		<div class="value-input">
+			<span>Username</span>
+			<input id="username" placeholder="Username">
+		</div>
+		<div class="value-input">
+			<span>Password</span>
+			<input id="password" placeholder="Password" type="password">
+		</div>
+		<div class="horizontal-button-container">
+			<button id="login-submit">Submit</button>
+		</div>
+	</div>
+
+</body>
+<script src="/js/generic.js"></script>
+<script src="/js/directoryAPI.js"></script>
+<script src="/js/login.js"></script>
+</html>

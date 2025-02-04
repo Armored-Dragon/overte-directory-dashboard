@@ -1,0 +1,9 @@
+<div class="place-card">
+	<div class="place-image">
+		<img src="<%= place.thumbnail ?? '/img/placesPlaceholder.webp' %>" onerror="this.onerror=null; this.src='/img/placesPlaceholder.webp';">
+	</div>
+	<div class="place-info">
+		<div class="name"><%= place.name %></div>
+		<div class="players"><%= place.current_attendance %></div>
+	</div>
+</div>

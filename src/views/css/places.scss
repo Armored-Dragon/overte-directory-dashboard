@@ -1,0 +1,71 @@
+@import 'colors.scss';
+
+.places-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 300px);
+	gap: 1rem;
+	color: white;
+	width: 75%;
+	margin: 1rem auto;
+	justify-content: center;
+
+	.place-card {
+		width: 300px;
+		height: 200px;
+		background-color: $secondary-color;
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+		margin-right: 1rem;
+		position: relative;
+		overflow: hidden;
+
+		.place-image {
+			height: 100%;
+			width: 100%;
+			margin: auto;
+			overflow: hidden;
+			display: flex;
+			transition: scale ease-in-out 0.1s;
+
+			img {
+				overflow: hidden;
+				display: block;
+				object-position: center center;
+				object-fit: cover;
+			}
+		}
+
+		.place-info {
+			position: absolute;
+			bottom: 0;
+			background-color: $primary-color;
+			border-radius: 0 0 10px 10px ;
+			padding: 0.5rem 1rem;
+			box-sizing: border-box;
+			font-size: 1.2rem;
+
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+
+			.name {
+				overflow: hidden; 
+				text-overflow: ellipsis; 
+				white-space: nowrap;
+			}
+
+			.players {
+				margin: 0 0 0 auto;
+				padding: 0 0 0 0.5rem;
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+			.place-image {
+				scale: 120%;
+			}
+		}
+	}
+}
