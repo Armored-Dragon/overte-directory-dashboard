@@ -12,15 +12,13 @@
 	<%- include("../partials/header.ejs") %>
 
 	<div class="places-container">
-		<% for (let place of placesList.data.places) { %>
-			<%- include("../partials/placeCard.ejs", { place: place }) %>
+		<% for (let domain of domainList) { %>
+			<%- include("../partials/domainCard.ejs", { domain: domain }) %>
 		<% } %>
 	</div>
 </body>
 
-
-
 <script src="/js/generic.js"></script>
 <script src="/js/directoryAPI.js"></script>
-<script src="/js/places.js"></script>
+<script src="/js/domains.js"></script>
 </html>

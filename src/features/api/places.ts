@@ -1,12 +1,13 @@
-let baseURL = `https://mv.overte.org/server/`
+import 'dotenv/config'
 
+const baseURL = process.env.BASE_URL;
 
 export async function getPlacesList({
   maturity = null,
   tag = null,
   perPage = 50,
   pageNum = 0,
-  order = "",
+  order = "descending,num_users",
   search = "",
   status = "",
   onlyMyPlaces = false
