@@ -25,6 +25,10 @@ app.get('/domains', async (req, res) => {
 	res.render('html/domains.ejs', {domainList: domainList});
 });
 
+app.get('/users', async (req, res) => {
+	res.render('html/index.ejs');
+});
+
 app.get('/login', (req, res) => {
 	res.render('html/login.ejs');
 });
