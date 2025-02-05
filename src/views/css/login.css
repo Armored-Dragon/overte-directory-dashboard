@@ -1,0 +1,35 @@
+.login-container {
+  margin: 3rem auto auto auto;
+  width: 400px;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: white;
+}
+.login-container .container-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+.login-container .value-input {
+  margin: 0.5rem 0;
+  display: flex;
+}
+.login-container .value-input span {
+  margin: auto auto auto 0;
+}
+.login-container .value-input input {
+  width: 250px;
+}
+.login-container .horizontal-button-container {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+.login-container .horizontal-button-container button {
+  flex-grow: 1;
+}
